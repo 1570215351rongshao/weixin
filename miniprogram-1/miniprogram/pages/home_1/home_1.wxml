@@ -1,0 +1,25 @@
+<!--pages/home_1/home_1.wxml-->
+<!-- 一步电影的区域 -->
+<view class="movie" wx:for="{{list}}" wx:key="{{index}}">
+  <!-- 电影的图片 左 -->
+  <image class="movie-img" src="{{item.images.small}}"></image>
+  <!-- 电影的介绍 右 -->
+    <view class="movie-info">
+      <!--标题 -->
+        <view class="movie-title">{{item.title}}</view>
+      <!-- 观众评分 -->
+        <view>
+          <text class="movie-score">{{item.rating.average}}</text>
+        </view>
+      <!-- 主演 -->
+      <view>
+        <text class="movie-zhu">主演:{{item.casts[0].name}}</text>
+      </view>
+      <!-- 年份 -->
+      <view class="movie-nian">
+        年份:{{item.year}}
+      </view>
+      <!-- 详细按钮 -->
+      <button data-id="{{item.id}}" bindtap="jumpComment" class="movie-comment">详情</button>
+    </view>
+</view>

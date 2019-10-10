@@ -1,0 +1,5 @@
+/* pages/mymovie/mymovie.wxss */
+.mymovie-img{
+  width:300rpx;
+  height:300rpx;
+}

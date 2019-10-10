@@ -1,0 +1,47 @@
+/* pages/home_1/home_1.wxss */
+.movie{
+  display: flex;
+  padding:10px;
+  border-bottom:1px solid #dedede;
+  background:#7F140B;
+}
+/*左侧图片*/
+.movie-img{
+   width:250rpx; /*图片的宽度和高度都切换成响应式 */
+  height:320rpx;
+  margin-right:50rpx;
+}
+/*右侧电影的介绍*/
+.movie-info{
+  font-size: 28rpx; /*右侧文字大小*/
+  line-height: 1.8;/*行高原有文字间距的1.8倍*/
+}
+/*标题*/
+.movie-title{
+  color:#fff;
+  font-size:38rpx;
+}
+/*分数*/
+.movie-score{
+  color:#faaf00;
+  font-size:35rpx;
+}
+/*详情按钮*/
+.movie-comment{
+  width:112px;
+  height:60rpx;
+  background:#FFD18F;
+  font-size: 26rpx;
+  margin-top:50rpx;
+  margin-left:0;
+}
+/*主演*/
+.movie-zhu{
+  color:#BFAE94;
+  font-size:28rpx;
+}
+/*年份*/
+.movie-nian{
+  color:#BFAE94;
+  font-size:28rpx;
+}

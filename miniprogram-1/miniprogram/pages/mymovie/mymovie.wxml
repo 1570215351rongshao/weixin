@@ -1,0 +1,27 @@
+<!--pages/mymovie/mymovie.wxml-->
+<view>
+  <view>
+    <image src="/images/2.jpg"></image>
+    <text>哪吒</text>
+    <image src=""></image>
+    <text>哪吒</text>
+  </view>
+  <view>
+    <!-- input的组件 -->
+    <van-field
+    value="{{ content}}"
+    placeholder="喜欢的原因"
+    bind:change="onContentChange"
+  />
+    <van-button bindtap="upload" type="warning" size="large">上传图片</van-button>
+    <!-- 预览区域 -->
+    <view class="imagelist">
+      <image src="{{image}}"></image>
+    </view>
+  
+  <!-- button组件 -->
+     <van-button bindtap="submit" type="danger" size="large">提交</van-button>
+  </view>
+</view>
+
+

@@ -1,0 +1,22 @@
+/* pages/profile/profile.wxss */
+.profile{
+  background:#e54847;
+  height:400rpx;
+  text-align: center;
+  position: relative;
+  width:100%;
+}
+.profile-img{
+  position:absolute;
+  width:100px;
+  height:100px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden; /*超出范围就隐藏*/
+  left:50%;
+  transform: translate(-50%,60rpx);
+}
+.profile-btn{
+  color:#fff;
+  background:#7F140B;
+}
